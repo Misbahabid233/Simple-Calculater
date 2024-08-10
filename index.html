@@ -9,30 +9,33 @@
 <body>
     <div class="mainDiv">
         <Span class="text">Simple Calculater !</Span>
-        <div class="inputwidth"><input type="text" id="inputData"></div>
+
+        <div class="inputwidth"><input type="text" id="inputData" ></div>
+
         <div class="rowSetting">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="btnStyle">+</button>
+            <button onclick= "number('7')">7</button>
+            <button onclick= "number('8')">8</button>
+            <button onclick= "number('9')">9</button>
+            <button class="btnStyle" onclick= "number('+')">+</button>
         </div>
         <div class="rowSetting">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="btnStyle">-</button>
+            <button onclick= "number('4')">4</button>
+            <button onclick= "number('5')">5</button>
+            <button onclick= "number('6')">6</button>
+            <button class="btnStyle" onclick= "number('-')">-</button>
         </div>
         <div class="rowSetting">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="btnStyle">x</button>
+            <button onclick= "number('1')">1</button>
+            <button onclick= "number('2')">2</button>
+            <button onclick= "number('3')">3</button>
+            <button class="btnStyle" onclick= "number('*')">x</button>
         </div>
         <div class="rowSetting">
-            <button class="clearSetting">C</button>
-            <button>0</button>
-            <button class="btnStyle">=</button>
-            <button class="btnStyle">/</button>
+            <button class="clearSetting" onclick="clearValue()">C</button>
+            <button class="clearSetting" onclick="del()">Del</button>
+            <button onclick="number('0')">0</button>
+            <button class="btnStyle" onclick= "result('=')">=</button>
+            <button class="btnStyle" onclick= "number('/')">/</button>
         </div>
 
     </div>
